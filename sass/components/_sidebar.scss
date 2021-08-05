@@ -6,16 +6,18 @@
   display: flex;
   justify-content: center;
 }
+
 .navigation {
+  // transform: translateY(10rem);
   &__checkbox {
     display: none;
   }
   &__button {
+    top: 8rem;
     background-color: $color-white;
     height: 5rem;
     width: 5rem;
     position: fixed;
-    top: 1.5rem;
     left: 1.5rem;
     border-radius: 50%;
     z-index: 2000;
@@ -24,10 +26,29 @@
     cursor: pointer;
   }
 
+  &__acount {
+    top: 1.5rem;
+    background-color: $color-white;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    left: 1.5rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    text-align: center;
+    cursor: pointer;
+  }
+  &__acount svg {
+    fill: $color-primary;
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+  }
+
   &__background {
     height: 100%;
     width: 8rem;
-
     position: fixed;
     top: 0;
     left: 0;
